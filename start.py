@@ -49,6 +49,7 @@ offset = 0
 while True:
     for event in pygame.event.get():
         if event.type == QUIT or (event.type == KEYDOWN and event.key == K_ESCAPE):
+            pygame.quit()
             exit()
 
     # mouse = pygame.mouse.get_pos()
